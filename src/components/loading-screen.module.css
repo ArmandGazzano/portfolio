@@ -1,0 +1,72 @@
+.screen {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background: #F2EAD8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.fadeOut {
+    animation: fade-out 0.6s ease forwards;
+}
+
+.name {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(32px, 5vw, 64px);
+    letter-spacing: 0.12em;
+    color: #3A322C;
+    animation: pulse 2.6s ease-in-out infinite;
+}
+
+.loading {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #6b5e4e;
+}
+
+@keyframes pulse {
+    0%,
+    100% {
+        transform: scale(1);
+    }
+    40% {
+        transform: scale(1.18);
+    }
+    70% {
+        transform: scale(0.88);
+    }
+}
+
+@keyframes ellipsis {
+    0% {
+        width: 0;
+    }
+    25% {
+        width: 0.6em;
+    }
+    50% {
+        width: 1.2em;
+    }
+    75% {
+        width: 1.8em;
+    }
+    100% {
+        width: 0;
+    }
+}
+
+@keyframes fade-out {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}

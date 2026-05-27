@@ -1,0 +1,79 @@
+{
+  "nav": {
+    "projects": "Projets",
+    "about": "À propos",
+    "contact": "Contact"
+  },
+  "hero": {
+    "subtitle": "Développeur Full Stack, et plus",
+    "tagline": "5 ans d'expérience · Angular - Java · Three.js",
+    "cta": "Voir mes projets"
+  },
+  "loading": "Chargement",
+  "hint": "Cliquer sur la structure",
+  "hintProjects": "Survoler les objets",
+  "hintProjectsMobile": "Appuyer sur les objets",
+  "about": {
+    "bio": "Je construis des logiciels qui tournent sur des systèmes critiques. Cinq ans dans la défense et l'aérospatial — Naval Group, Airbus, DGA — sur des plateformes de simulation tactique temps réel et des interfaces de visualisation 3D opérationnelles.\nCôté métier : Java Spring Boot, Angular, architecture microservices, environnements contraints et exigences de fiabilité élevée. Côté rendu : Three.js, WebGL, et Unreal Engine sur mes projets perso — parce que la frontière entre applicatif critique et visualisation interactive m'a toujours intéressé.\nBasé à Paris. Disponible en VIE ou à l'international.",
+    "stack": {
+      "front": "Frontend",
+      "back": "Backend",
+      "cloud": "Cloud / DevOps",
+      "tools": "Outillage",
+      "threeD": "3D"
+    }
+  },
+  "contact": {
+    "title": "On travaille ensemble ?",
+    "downloadCV": "Télécharger mon CV"
+  },
+  "projects": {
+    "carrier": {
+      "company": "Sopra Steria · Naval Group",
+      "duration": "~1 an",
+      "title": "GesVol – Gestion des vols du porte-avions",
+      "description": "Développement from scratch du logiciel de gestion des vols du porte-avions Charles de Gaulle (Angular 18, Java 17 Spring Boot 3). Rôle de Tech Lead : conception de l'architecture full stack, déploiement de l'infrastructure sur RKE2 (Kubernetes sur Linux), revues de code et accompagnement des développeurs. Administration des environnements Linux et mise en production."
+    },
+    "rafale": {
+      "company": "Sopra Steria · DGA",
+      "duration": "~6 mois",
+      "title": "SimTac – Simulation tactique cartographique 2D",
+      "description": "Développement d'une plateforme web de simulation tactique avec visualisation cartographique 2D temps réel pour la Direction Générale de l'Armement. Intégration d'un flux vidéo 3D généré par Unreal Engine directement dans le navigateur. Développement des APIs REST Java Spring Boot et des interfaces Angular de visualisation des données opérationnelles en temps réel."
+    },
+    "submarine": {
+      "company": "Naval Group · Stage fin d'études",
+      "duration": "6 mois",
+      "title": "Module d'enregistrement réseau système de combat",
+      "description": "Développement d'un module d'enregistrement et de visualisation de données réseau en temps réel dans le cadre du stage de fin d'études. Capture et analyse de trames réseau du système de combat, conception des interfaces de visualisation des flux de données, mise en place des tests unitaires et migration Angular 5 → 12."
+    },
+    "helicopter": {
+      "company": "Sopra Steria · Airbus",
+      "duration": "~1 an",
+      "title": "RETEX – Suivi de conception équipements embarqués",
+      "description": "Évolution d'une application de suivi de conception d'équipements embarqués pour Airbus. Développement de nouvelles fonctionnalités frontend Angular 15 et backend Java Spring Boot 3, maintenance et support des fonctionnalités existantes, participation aux démonstrations client et aux cérémonies Scrum."
+    },
+    "lighthouse": {
+      "company": "Alten · Naval Group",
+      "duration": "6 mois",
+      "title": "Lutte anti-mines & alertes maritimes",
+      "description": "Développement d'une application web Angular de planification de missions par drones pour la lutte anti-mines. Migration d'une application de recueil des alertes maritimes d'un client lourd C# vers une interface web moderne Angular. Conception des composants UI interactifs de visualisation cartographique, en collaboration étroite avec les équipes métier et les utilisateurs finaux."
+    },
+    "fregate": {
+      "company": "Sopra Steria · Naval Group",
+      "duration": "~1 an 2 mois",
+      "title": "RFID – Suivi d'équipements embarqués",
+      "description": "Conception et développement d'une application de suivi et localisation d'équipements embarqués via RFID. Développement du module d'encodage multirecord de tags RFID en C#, des APIs backend en Node.js dans une architecture microservices, et des interfaces frontend Angular intégrées aux services RFID. Tests unitaires et recettes fonctionnelles."
+    }
+  },
+  "modal": {
+    "seeProject": "Voir le projet"
+  },
+  "tooltips": {
+    "carrier": "Sopra Steria · Naval Group\n\nGesVol · Gestion des vols\ndu porte-avions — Tech Lead",
+    "submarine": "Naval Group · Stage fin d'études\n\nModule d'enregistrement réseau\ndu système de combat",
+    "helicopter": "Sopra Steria · Airbus\n\nRETEX · Suivi de conception\nd'équipements embarqués",
+    "rafale": "Sopra Steria · DGA\n\nSimTac · Simulation tactique\ncartographique 2D temps réel",
+    "lighthouse": "Alten · Naval Group\n\nPlanification de missions drone\n+ Migration alertes maritimes C# → Angular",
+    "fregate": "Sopra Steria · Naval Group\n\nRFID · Suivi et localisation\nd'équipements embarqués"
+  }
+}

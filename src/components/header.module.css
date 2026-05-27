@@ -1,0 +1,87 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1001;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 40px;
+    pointer-events: none;
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 14px 20px;
+    }
+}
+
+.logo {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 24px;
+    letter-spacing: 0.08em;
+    color: var(--color-text);
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    pointer-events: auto;
+}
+
+@media (max-width: 768px) {
+    .nav {
+        gap: 16px;
+    }
+}
+
+.navLinks {
+    display: flex;
+    gap: 32px;
+}
+
+@media (max-width: 768px) {
+    .navLinks {
+        display: none;
+    }
+}
+
+.navLink {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--color-text);
+    transition: color 0.2s;
+}
+
+.btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 0.08em;
+    padding: 4px;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+    color: var(--color-text);
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+.darkBtn {
+    font-size: 18px;
+    line-height: 1;
+    width: 28px;
+    text-align: center;
+}
