@@ -4,7 +4,7 @@ Interactive portfolio built around two 3D scenes — a procedural block structur
 
 **→ [armandgazzano.dev](https://armandgazzano.dev)**
 
-![Portfolio preview](public/og-image.png)
+![Portfolio preview](assets/portfolio.gif)
 
 ---
 
