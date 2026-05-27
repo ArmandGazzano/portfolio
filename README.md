@@ -1,6 +1,6 @@
 # armandgazzano.dev
 
-Portfolio interactif construit autour de deux scènes 3D — une structure de kaplas avec simulation physique, et une scène navale avec les projets cliquables.
+Interactive portfolio built around two 3D scenes — a procedural block structure with real-time physics simulation, and a naval scene where each model links to a professional project.
 
 **→ [armandgazzano.dev](https://armandgazzano.dev)**
 
@@ -10,25 +10,25 @@ Portfolio interactif construit autour de deux scènes 3D — une structure de ka
 
 ## Stack
 
-| Domaine | Technos |
+| | |
 |---|---|
 | Framework | React 19, Vite |
 | 3D | Three.js, React Three Fiber, React Three Drei |
-| Physique | React Three Rapier |
-| i18n | i18next (FR / EN, détection auto) |
-| Déploiement | Vercel |
+| Physics | React Three Rapier |
+| i18n | i18next (FR / EN, auto-detected) |
+| Deployment | Vercel |
 
-## Fonctionnalités
+## Features
 
-- **Scène hero** — structure de kaplas procédurale avec physique temps réel (cliquer pour faire tomber)
-- **Scène projets** — 6 modèles 3D navals cliquables, chacun lié à un projet professionnel
-- **Modal projet** — description complète, stack technique, fermeture Escape / backdrop
-- **Dark mode** — thème clair/sombre avec couleurs d'eau et d'éclairage différenciées
-- **Bilingue** — FR/EN avec détection automatique de la langue navigateur
-- **Loading screen** — suivi de progression des assets 3D
-- **CV téléchargeable** — version FR et EN
+- **Hero scene** — procedural block structure with real-time physics (click to knock it down)
+- **Projects scene** — 6 clickable 3D naval models, each linked to a professional project
+- **Project modal** — full description, tech stack, close with Escape or backdrop click
+- **Dark mode** — light/dark theme with distinct water color and lighting
+- **Bilingual** — FR/EN with automatic browser language detection
+- **Loading screen** — asset progress tracking before scene reveal
+- **Downloadable resume** — FR and EN versions
 
-## Lancer en local
+## Run locally
 
 ```bash
 npm install
@@ -40,14 +40,14 @@ npm run dev
 ```
 src/
 ├── components/
-│   ├── models/           # Modèles 3D GLB (AircraftCarrier, Fregate, Rafale…)
-│   ├── Scene.jsx         # Scène hero (kaplas + physique)
-│   ├── ProjectsScene.jsx # Scène projets (océan + modèles navals)
-│   └── ProjectModal.jsx  # Modal détail projet
+│   ├── models/           # GLB 3D models (AircraftCarrier, Fregate, Rafale…)
+│   ├── Scene.jsx         # Hero scene (blocks + physics)
+│   ├── ProjectsScene.jsx # Projects scene (ocean + naval models)
+│   └── ProjectModal.jsx  # Project detail modal
 ├── data/
-│   └── projects.js       # Stack technique par projet
+│   └── projects.js       # Tech stack per project
 ├── i18n/
 │   ├── fr.json
 │   └── en.json
-└── structures/           # Générateurs procéduraux (tour, arène, temple…)
+└── structures/           # Procedural generators (tower, arena, temple…)
 ```
