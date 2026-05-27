@@ -1,6 +1,5 @@
 import { OrbitControls } from '@react-three/drei';
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
-import { useIsMobile } from '../hooks/useIsMobile';
 import {
     CuboidCollider,
     Physics,
@@ -9,6 +8,7 @@ import {
 } from '@react-three/rapier';
 import { useEffect, useMemo, useRef } from 'react';
 import * as THREE from 'three';
+import { useIsMobile } from '../hooks/useIsMobile';
 import generateArena from '../structures/arena';
 import generateBridge from '../structures/bridge';
 import generateTemple from '../structures/temple';
@@ -125,7 +125,10 @@ export default function Scene({ isDark = false }) {
                 color={isDark ? '#0a0427' : '#FFF5E0'}
             />
             <Lights isDark={isDark} />
-            <ViewOffset xRatio={isMobile ? 0 : 0.2} yRatio={isMobile ? -0.15 : 0} />
+            <ViewOffset
+                xRatio={isMobile ? 0 : 0.2}
+                yRatio={isMobile ? -0.15 : 0}
+            />
             <OrbitControls
                 autoRotate
                 autoRotateSpeed={0.6}

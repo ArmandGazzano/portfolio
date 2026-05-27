@@ -34,6 +34,7 @@ export default function KaplaStructure({ structures }) {
     const isReconstructing = useRef(false);
     const currentStructure = useRef(0);
 
+    // Destroy structure when clicking on it
     const destroy = () => {
         if (isReconstructing.current || isDestroyed.current) return;
         Object.values(bodyRefs.current).forEach((body) => {
@@ -55,11 +56,12 @@ export default function KaplaStructure({ structures }) {
         });
     };
 
+    // Reconstruct structure by moving blocks to their initial positions
     const reconstruct = () => {
         const next = Math.floor(Math.random() * structures.length);
         currentStructure.current = next;
 
-        // Mettre à jour les positions cibles
+        // Update target positions
         structures[next].forEach((block, index) => {
             positionsRef.current[index] = block;
         });

@@ -20,11 +20,8 @@ import { Lighthouse } from './models/Lighthouse';
 import { Rafale } from './models/Rafale';
 import { Submarine } from './models/Submarine';
 
-/* ─── tooltip context ────────────────────────────────────── */
-
+// TOOLTIP
 const TooltipCtx = createContext(null);
-
-/* ─── utils ──────────────────────────────────────────────── */
 
 function Tooltip({ text, isDark }) {
     return (
@@ -73,7 +70,7 @@ function useHover(id) {
     };
 }
 
-/* ─── generic scene object ───────────────────────────────── */
+// GENERIC SCENE OBJECT
 
 function SceneObject({
     id,
@@ -97,7 +94,7 @@ function SceneObject({
     );
 }
 
-/* ─── camera ─────────────────────────────────────────────── */
+// CAMERA
 
 function CameraSetup({ isMobile }) {
     const { camera } = useThree();
@@ -112,8 +109,7 @@ function CameraSetup({ isMobile }) {
     return null;
 }
 
-/* ─── environment ────────────────────────────────────────── */
-
+// ENVIRONMENT OBJECTS
 function Ocean({ isDark }) {
     const water = useMemo(() => {
         const geo = new THREE.PlaneGeometry(1000, 1000);
@@ -161,7 +157,7 @@ function SeaFloor({ isDark }) {
     );
 }
 
-/* ─── lighthouse (custom: refs + animation + lights) ─────── */
+// Lighthouse
 
 function LighthouseObject({ isDark, isMobile }) {
     const { hovered, handlers } = useHover('lighthouse');
@@ -230,7 +226,7 @@ function LighthouseObject({ isDark, isMobile }) {
     );
 }
 
-/* ─── main scene ─────────────────────────────────────────── */
+// MAIN SCENE
 
 export default function ProjectsScene({ isDark = false }) {
     const isMobile = useIsMobile();
