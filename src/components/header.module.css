@@ -51,6 +51,7 @@
 }
 
 .navLink {
+    position: relative;
     font-family: 'DM Sans', sans-serif;
     font-weight: 400;
     font-size: 14px;
@@ -58,7 +59,23 @@
     text-transform: uppercase;
     text-decoration: none;
     color: var(--color-text);
-    transition: color 0.2s;
+}
+
+.navLink::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    height: 1.5px;
+    width: 100%;
+    background: var(--color-text);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.35s ease;
+}
+
+.navLink:hover::after {
+    transform: scaleX(1);
 }
 
 .btn {

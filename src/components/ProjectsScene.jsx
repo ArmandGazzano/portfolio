@@ -57,10 +57,12 @@ function useHover(id) {
                 e.stopPropagation();
                 setHoveredId(id);
                 document.body.style.cursor = 'pointer';
+                document.dispatchEvent(new CustomEvent('cursorhover', { detail: true }));
             },
             onPointerOut: () => {
                 setHoveredId((cur) => (cur === id ? null : cur));
                 document.body.style.cursor = 'auto';
+                document.dispatchEvent(new CustomEvent('cursorhover', { detail: false }));
             },
             onClick: (e) => {
                 e.stopPropagation();

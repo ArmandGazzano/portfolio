@@ -181,5 +181,13 @@ export default function KaplaStructure({ structures }) {
         });
     }, [structures, currentStructure.current]);
 
-    return <group onClick={destroy}>{layers}</group>;
+    return (
+        <group
+            onClick={destroy}
+            onPointerEnter={() => document.dispatchEvent(new CustomEvent('cursorhover', { detail: true }))}
+            onPointerLeave={() => document.dispatchEvent(new CustomEvent('cursorhover', { detail: false }))}
+        >
+            {layers}
+        </group>
+    );
 }

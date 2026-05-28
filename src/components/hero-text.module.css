@@ -63,6 +63,8 @@
 }
 
 .cta {
+    position: relative;
+    overflow: hidden;
     display: inline-flex;
     align-items: center;
     gap: 8px;
@@ -78,9 +80,25 @@
     border: 1px solid var(--color-text);
     cursor: pointer;
     pointer-events: auto;
-    transition: opacity 0.2s;
+    transition: color 0.35s ease;
+    z-index: 0;
+}
+
+.cta::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--color-text);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.35s ease;
+    z-index: -1;
 }
 
 .cta:hover {
-    opacity: 0.5;
+    color: var(--color-bg);
+}
+
+.cta:hover::before {
+    transform: scaleX(1);
 }

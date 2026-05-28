@@ -5,6 +5,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Header from './components/Header';
 import HeroText from './components/HeroText';
+import Cursor from './components/Cursor';
 import LoadingScreen from './components/LoadingScreen';
 import ProjectsScene from './components/ProjectsScene';
 import Scene from './components/Scene';
@@ -15,6 +16,7 @@ function App() {
 
     return (
         <>
+        <Cursor isDark={isDark} />
         <LoadingScreen />
         <div className={`scroll-container${isDark ? ' dark' : ''}`}>
             <section id="hero" className="snap-section">

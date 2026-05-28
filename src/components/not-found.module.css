@@ -1,0 +1,79 @@
+.page {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: #F2EAD8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.canvas {
+    position: absolute;
+    inset: 0;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    text-align: center;
+    pointer-events: none;
+}
+
+.title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(120px, 20vw, 240px);
+    line-height: 1;
+    letter-spacing: -0.02em;
+    color: #3A322C;
+}
+
+.sub {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #6B5E4E;
+}
+
+.link {
+    pointer-events: auto;
+    display: inline-block;
+    margin-top: 12px;
+    padding: 10px 24px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #3A322C;
+    text-decoration: none;
+    border: 1px solid #3A322C;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.35s ease;
+}
+
+.link::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: #3A322C;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.35s ease;
+    z-index: -1;
+}
+
+.link:hover {
+    color: #F2EAD8;
+}
+
+.link:hover::before {
+    transform: scaleX(1);
+}

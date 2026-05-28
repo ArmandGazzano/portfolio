@@ -1,5 +1,7 @@
 /* ─── theme tokens ───────────────────────────────────────── */
 
+* { cursor: none; }
+
 :root {
     --color-bg: #F2EAD8;
     --color-text: #3A322C;

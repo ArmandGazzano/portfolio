@@ -39,17 +39,17 @@
 }
 
 .link {
+    position: relative;
     font-family: 'DM Sans', sans-serif;
     font-weight: 300;
     font-size: clamp(16px, 1.5vw, 20px);
     color: var(--color-text);
     text-decoration: none;
     border-bottom: 1px solid var(--color-border);
-    padding-bottom: 16px;
+    padding: 16px 8px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transition: opacity 0.2s;
 }
 
 @media (max-width: 768px) {
@@ -58,8 +58,21 @@
     }
 }
 
-.link:hover {
-    opacity: 0.5;
+.link::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background: var(--color-text);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.35s ease;
+}
+
+.link:hover::after {
+    transform: scaleX(1);
 }
 
 .linkLabel {
