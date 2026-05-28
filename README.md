@@ -1,8 +1,8 @@
-# armandgazzano.dev
+# armandgazzano.com
 
 Interactive portfolio built around two 3D scenes — a procedural block structure with real-time physics simulation, and a naval scene where each model links to a professional project.
 
-**→ [armandgazzano.dev](https://armandgazzano.dev)**
+**→ [armandgazzano.com](https://armandgazzano.com)**
 
 ![Portfolio preview](public/portfolio.gif)
 
@@ -10,13 +10,13 @@ Interactive portfolio built around two 3D scenes — a procedural block structur
 
 ## Stack
 
-| | |
-|---|---|
-| Framework | React 19, Vite |
-| 3D | Three.js, React Three Fiber, React Three Drei |
-| Physics | React Three Rapier |
-| i18n | i18next (FR / EN, auto-detected) |
-| Deployment | Vercel |
+|            |                                               |
+| ---------- | --------------------------------------------- |
+| Framework  | React 19, Vite                                |
+| 3D         | Three.js, React Three Fiber, React Three Drei |
+| Physics    | React Three Rapier                            |
+| i18n       | i18next (FR / EN, auto-detected)              |
+| Deployment | Vercel                                        |
 
 ## Features
 

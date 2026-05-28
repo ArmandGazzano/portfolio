@@ -1,4 +1,6 @@
 import { Canvas } from '@react-three/fiber';
+import { useState } from 'react';
+import Cursor from './Cursor';
 import styles from './not-found.module.css';
 
 function Scene() {
@@ -12,8 +14,11 @@ function Scene() {
 }
 
 export default function NotFound() {
+    const [isDark] = useState(false);
+
     return (
         <div className={styles.page}>
+            <Cursor isDark={isDark} />
             <div className={styles.canvas}>
                 <Canvas camera={{ position: [0, 0, 5], fov: 60 }}>
                     <Scene />

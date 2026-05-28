@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://armandgazzano.dev/sitemap.xml
+Sitemap: https://armandgazzano.com/sitemap.xml
