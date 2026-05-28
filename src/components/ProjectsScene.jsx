@@ -24,6 +24,7 @@ import { Submarine } from './models/Submarine';
 const TooltipCtx = createContext(null);
 
 function Tooltip({ text, isDark }) {
+    const { t } = useTranslation();
     return (
         <div
             style={{
@@ -44,6 +45,16 @@ function Tooltip({ text, isDark }) {
             }}
         >
             {text}
+            <div style={{
+                marginTop: '5px',
+                paddingTop: '5px',
+                borderTop: `1px solid ${isDark ? 'rgba(242,234,216,0.15)' : 'rgba(26,23,20,0.15)'}`,
+                fontSize: '9px',
+                opacity: 0.55,
+                letterSpacing: '0.14em',
+            }}>
+                {t('tooltipHint')}
+            </div>
         </div>
     );
 }

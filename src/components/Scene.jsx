@@ -127,7 +127,7 @@ export default function Scene({ isDark = false }) {
             <Lights isDark={isDark} />
             <ViewOffset
                 xRatio={isMobile ? 0 : 0.2}
-                yRatio={isMobile ? -0.15 : 0}
+                yRatio={isMobile ? -0.2 : 0}
             />
             <OrbitControls
                 autoRotate

@@ -14,7 +14,7 @@
 
 @media (max-width: 768px) {
     .section {
-        padding: 60px 6%;
+        padding: 72px 6% 32px;
     }
 }
 
@@ -36,7 +36,7 @@
 @media (max-width: 768px) {
     .grid {
         grid-template-columns: 1fr;
-        gap: 40px;
+        gap: 28px;
     }
 }
 
@@ -49,6 +49,14 @@
     margin: 0;
     white-space: pre-line;
     text-align: justify;
+}
+
+@media (max-width: 768px) {
+    .bio {
+        font-size: 13px;
+        line-height: 1.65;
+        text-align: left;
+    }
 }
 
 .stackList {

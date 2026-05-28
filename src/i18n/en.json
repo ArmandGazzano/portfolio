@@ -10,7 +10,9 @@
         "cta": "See my projects"
     },
     "loading": "Loading",
+    "tooltipHint": "Click for more details",
     "hint": "Click on the structure",
+    "hintMobile": "Tap on the structure",
     "hintProjects": "Hover over the objects",
     "hintProjectsMobile": "Tap on the objects",
     "about": {

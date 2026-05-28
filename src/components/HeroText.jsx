@@ -17,8 +17,8 @@ export default function HeroText() {
             <p className={styles.tagline}>{t('hero.tagline')}</p>
             <button className={styles.cta} onClick={handleCTA} aria-label={t('hero.cta')}>
                 {t('hero.cta')}
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
-                    <path d="M12 5v14M5 16l7 6 7-6"/>
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{ display: 'block' }} aria-hidden="true">
+                    <path d="M12 5v14m-7-7l7 7 7-7"/>
                 </svg>
             </button>
         </div>
