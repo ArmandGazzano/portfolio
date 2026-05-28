@@ -242,7 +242,7 @@ export default function ProjectsScene({ isDark = false }) {
             <Canvas
                 shadows
                 camera={{ position: [0, 5.5, 20], fov: 55 }}
-                style={{ width: '100%', height: '100%', touchAction: 'pan-y' }}
+                style={{ width: '100%', height: '100%' }}
             >
                 <color attach="background" args={[bgColor]} />
                 <fog attach="fog" args={[bgColor, 28, 60]} />

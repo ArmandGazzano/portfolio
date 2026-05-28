@@ -75,6 +75,12 @@ body,
     animation: hint-fade 3s ease-in-out infinite;
 }
 
+@media (hover: none) {
+    canvas {
+        touch-action: pan-y !important;
+    }
+}
+
 @media (max-width: 768px) {
     .click-hint {
         left: 0;

@@ -114,7 +114,7 @@ export default function Scene({ isDark = false }) {
         <Canvas
             shadows
             camera={{ position: [0, 6, 20], fov: 65 }}
-            style={{ width: '100vw', height: '100vh', touchAction: 'pan-y' }}
+            style={{ width: '100vw', height: '100vh' }}
         >
             <color
                 attach="background"
