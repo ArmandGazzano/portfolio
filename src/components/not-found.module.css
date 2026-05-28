@@ -43,7 +43,9 @@
 
 .link {
     pointer-events: auto;
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
     margin-top: 12px;
     padding: 10px 24px;
     font-family: 'DM Sans', sans-serif;

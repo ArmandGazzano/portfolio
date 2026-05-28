@@ -28,6 +28,18 @@ const DownloadIcon = () => (
     </svg>
 );
 
+const ExternalArrow = () => (
+    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
+        <path d="M7 17L17 7M17 7H7M17 7v10"/>
+    </svg>
+);
+
+const DownArrow = () => (
+    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
+        <path d="M12 5v14M5 16l7 6 7-6"/>
+    </svg>
+);
+
 const links = [
     { label: 'GitHub', url: 'https://github.com/ArmandGazzano', Icon: GithubIcon },
     { label: 'LinkedIn', url: 'https://www.linkedin.com/in/armand-gazzano/', Icon: LinkedinIcon },
@@ -55,7 +67,7 @@ export default function Contact() {
                             <Icon />
                             {label}
                         </span>
-                        <span>↗</span>
+                        <ExternalArrow />
                     </a>
                 ))}
                 <a
@@ -68,7 +80,7 @@ export default function Contact() {
                         <DownloadIcon />
                         {t('contact.downloadCV')}
                     </span>
-                    <span>↓</span>
+                    <DownArrow />
                 </a>
             </div>
         </section>

@@ -39,6 +39,7 @@ body,
 
 .scroll-container {
     height: 100vh;
+    height: 100svh;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
     background-color: var(--color-bg);
@@ -54,6 +55,7 @@ body,
     position: relative;
     width: 100%;
     height: 100vh;
+    height: 100svh;
     scroll-snap-align: start;
     flex-shrink: 0;
     display: flex;
@@ -73,12 +75,6 @@ body,
     pointer-events: none;
     color: var(--color-muted);
     animation: hint-fade 3s ease-in-out infinite;
-}
-
-@media (hover: none) {
-    canvas {
-        touch-action: pan-y !important;
-    }
 }
 
 @media (max-width: 768px) {
