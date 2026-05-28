@@ -4,6 +4,7 @@ import styles from './cursor.module.css';
 const TRAIL_COUNT = 16;
 
 export default function Cursor({ isDark }) {
+    if (!window.matchMedia('(hover: hover)').matches) return null;
     const color = isDark ? '#F2EAD8' : '#3A322C';
     const dotRef = useRef(null);
     const ringRef = useRef(null);

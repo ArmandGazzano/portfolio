@@ -1,6 +1,8 @@
 /* ─── theme tokens ───────────────────────────────────────── */
 
-* { cursor: none; }
+@media (hover: hover) {
+    * { cursor: none; }
+}
 
 :root {
     --color-bg: #F2EAD8;
