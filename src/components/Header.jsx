@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next';
 import styles from './header.module.css';
 
 function scrollTo(id) {
+    document.dispatchEvent(new CustomEvent('navigate'));
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
 }
 

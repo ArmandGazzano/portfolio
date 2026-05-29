@@ -9,8 +9,13 @@ export default function ProjectModal({ projectId, onClose }) {
 
     useEffect(() => {
         const onKey = (e) => { if (e.key === 'Escape') onClose(); };
+        const onNavigate = () => onClose();
         window.addEventListener('keydown', onKey);
-        return () => window.removeEventListener('keydown', onKey);
+        document.addEventListener('navigate', onNavigate);
+        return () => {
+            window.removeEventListener('keydown', onKey);
+            document.removeEventListener('navigate', onNavigate);
+        };
     }, [onClose]);
 
     return (

@@ -1,7 +1,7 @@
 /* ─── theme tokens ───────────────────────────────────────── */
 
 @media (hover: hover) {
-    * { cursor: none; }
+    * { cursor: none !important; }
 }
 
 :root {
