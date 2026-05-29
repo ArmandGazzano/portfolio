@@ -58,19 +58,24 @@ export default function Cursor({ isDark }) {
         const onCursorHover = (e) =>
             e.detail ? onEnterClickable() : onLeaveClickable();
 
+        const onOver = (e) => {
+            if (e.target.closest('a, button, [role="button"]')) onEnterClickable();
+        };
+        const onOut = (e) => {
+            if (e.target.closest('a, button, [role="button"]')) onLeaveClickable();
+        };
+
         document.addEventListener('mousemove', onMove);
         document.addEventListener('cursorhover', onCursorHover);
-        document
-            .querySelectorAll('a, button, [role="button"]')
-            .forEach((el) => {
-                el.addEventListener('mouseenter', onEnterClickable);
-                el.addEventListener('mouseleave', onLeaveClickable);
-            });
+        document.addEventListener('mouseover', onOver);
+        document.addEventListener('mouseout', onOut);
 
         rafId = requestAnimationFrame(tick);
         return () => {
             document.removeEventListener('mousemove', onMove);
             document.removeEventListener('cursorhover', onCursorHover);
+            document.removeEventListener('mouseover', onOver);
+            document.removeEventListener('mouseout', onOut);
             cancelAnimationFrame(rafId);
         };
     }, []);

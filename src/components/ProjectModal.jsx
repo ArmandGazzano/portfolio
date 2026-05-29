@@ -15,6 +15,7 @@ export default function ProjectModal({ projectId, onClose }) {
         return () => {
             window.removeEventListener('keydown', onKey);
             document.removeEventListener('navigate', onNavigate);
+            document.dispatchEvent(new CustomEvent('cursorhover', { detail: false }));
         };
     }, [onClose]);
 
